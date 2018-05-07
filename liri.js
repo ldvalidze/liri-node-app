@@ -40,7 +40,7 @@ function spotifyThisSong() {
             return console.log('Error occurred: ' + err);
         }
 
-        for (var i = 0; i < data.tracks.items.length; i++) {
+        for (var i = 0; i < 3; i++) {
             console.log('\n========= ( ' + i + ' ) =========');
             console.log('ARTIST: ' + data.tracks.items[i].album.artists[0].name);
             console.log('SONG: ' + data.tracks.items[i].name);
@@ -95,7 +95,7 @@ function doWhatItSays() {
                 return console.log('Error occurred: ' + err);
             }
     
-            for (var i = 0; i < data.tracks.items.length; i++) {
+            for (var i = 0; i < 3; i++) {
                 console.log('\n========= ( ' + i + ' ) =========');
                 console.log('ARTIST: ' + data.tracks.items[i].album.artists[0].name);
                 console.log('SONG: ' + data.tracks.items[i].name);
@@ -105,3 +105,5 @@ function doWhatItSays() {
         });
     });
 }
+
+console.log("======================================================================")
